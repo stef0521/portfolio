@@ -1,0 +1,104 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="Stef van Tuinen — INDEX × SIGNAL">
+<div id="intro">
+  <canvas id="rain"></canvas>
+  <div class="entry" id="entry">
+    <div class="ettl">Stef van Tuinen<br>Audiovisual Portfolio — ’25</div>
+    <button class="ebtn" id="enterSnd">Enter with sound</button>
+    <button class="emute" id="enterMute">enter muted</button>
+  </div>
+</div>
+<button id="sndToggle" class="off" aria-label="Toggle sound">
+  <span class="bar"><i></i><i></i><i></i></span><span id="sndLbl">Sound off</span>
+</button>
+<div class="cursor" id="cursor"></div>
+
+<header>
+  <div class="logo">SVT©</div>
+  <nav><a href="#work">Work</a><a href="#contact">Contact</a>
+    <a href="https://soundcloud.com/stefvant" target="_blank" rel="noopener">SoundCloud ↗</a></nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="tag">Music Producer · Sound Designer · Video Editor</div>
+    <div class="ascii-host" id="heroHost">
+      <h1><span class="aline">Stef</span><span class="aline indent o">van</span><span class="aline indent">Tuinen</span></h1>
+    </div>
+    <p class="desc">I love <b>mixing media into something new</b> — producing music, designing sound and cutting video into installations and experiences you can feel.</p>
+  </section>
+
+  <div class="marquee">
+    <div class="track" id="track">
+      <span>Sound Design</span><span class="dot">/</span><span>Music Production</span><span class="dot">/</span>
+      <span>Video Editing</span><span class="dot">/</span><span>Light Shows</span><span class="dot">/</span>
+      <span>Installations</span><span class="dot">/</span>
+      <span>Sound Design</span><span class="dot">/</span><span>Music Production</span><span class="dot">/</span>
+      <span>Video Editing</span><span class="dot">/</span><span>Light Shows</span><span class="dot">/</span>
+      <span>Installations</span><span class="dot">/</span>
+    </div>
+  </div>
+
+  <section class="work" id="work">
+    <div class="h"><span>Selected Work — Index</span><b>(06)</b></div>
+    <div class="grid">
+
+      <a class="card" href="#">
+        <div class="imgwrap"><span class="idx">01</span><div class="ph">Foto-slot</div><div class="tint"></div><span class="view">View ↗</span></div>
+        <div class="info"><div><div class="ttl">PANOPTICON.os</div><div class="sub">Interactive Audiovisual Light Installation</div></div>
+          <div class="roles">Installation · Music · Light · SFX</div></div>
+      </a>
+
+      <a class="card" href="#">
+        <div class="imgwrap"><span class="idx">02</span><div class="ph">Foto-slot</div><div class="tint"></div><span class="view">View ↗</span></div>
+        <div class="info"><div><div class="ttl">Synesthesia</div><div class="sub">An Audio Visual Experience</div></div>
+          <div class="roles">Concepting · Music · Light · SFX</div></div>
+      </a>
+
+      <a class="card" href="#">
+        <div class="imgwrap"><span class="idx">03</span><div class="ph">Foto-slot</div><div class="tint"></div><span class="view">View ↗</span></div>
+        <div class="info"><div><div class="ttl">Experimentation</div><div class="sub">Combining different medias</div></div>
+          <div class="roles">Visual design · Music · Video</div></div>
+      </a>
+
+      <a class="card" href="#">
+        <div class="imgwrap"><span class="idx">04</span><div class="ph">Foto-slot</div><div class="tint"></div><span class="view">View ↗</span></div>
+        <div class="info"><div><div class="ttl">Sonic Branding</div><div class="sub">Making a brand come to life</div></div>
+          <div class="roles">Sound Design · Logo Animation</div></div>
+      </a>
+
+      <a class="card" href="#">
+        <div class="imgwrap"><span class="idx">05</span><div class="ph">Foto-slot</div><div class="tint"></div><span class="view">View ↗</span></div>
+        <div class="info"><div><div class="ttl">Circle 4 Change</div><div class="sub">Song &amp; jingle production</div></div>
+          <div class="roles">Music · Vocal recording · Jingle</div></div>
+      </a>
+
+      <a class="card" href="#">
+        <div class="imgwrap"><span class="idx">06</span><div class="ph">Foto-slot</div><div class="tint"></div><span class="view">View ↗</span></div>
+        <div class="info"><div><div class="ttl">Art Based Music</div><div class="sub">Drawing inspiration from artworks</div></div>
+          <div class="roles">Music · Mixing media</div></div>
+      </a>
+
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div class="lbl">Available for work — 2025</div>
+    <div class="ascii-host" id="ctaHost">
+      <h2><a href="mailto:stefvantuinen74@gmail.com"><span class="aline">Get</span><span class="aline">in touch</span></a></h2>
+    </div>
+    <div class="row">
+      <a href="mailto:stefvantuinen74@gmail.com">stefvantuinen74@gmail.com</a>
+      <a href="https://www.instagram.com/stefvantuinen/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://soundcloud.com/stefvant" target="_blank" rel="noopener">SoundCloud</a>
+      <span>© 2025 — Index × Signal</span>
+    </div>
+  </footer>
+</main>
+
+<script>
+  import '../scripts/main.ts';
+</script>
+</BaseLayout>
